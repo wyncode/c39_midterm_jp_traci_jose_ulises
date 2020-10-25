@@ -3,9 +3,8 @@ import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import MainPage from "./components/MainPage";
 import LandingPage from "./components/LandingPage";
-// import BreweryList from "./Components/BreweryList";
-// import Brewery from "./Components/Brewery";
-// import AboutUs from "./Components/AboutUs";
+import BreweryPage from "./Components/BreweryPage";
+import AboutUs from "./Components/AboutUs";
 
 const App = () => (
   <BrowserRouter>
@@ -13,9 +12,8 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={LandingPage} />
       <Route exact path="/Home" component={MainPage} />
-      {/* <Route exact path="/brewery/:location/:term?" component={BreweryList} />
-      <Route path="/brewery/:id" component={Brewery} /> */}
-      {/* <Route exact path="/about" component={AboutUs} /> */}
+      <Route exact path="/brewery" component={BreweryPage} />
+      <Route exact path="/About" component={AboutUs} /> 
     </Switch>
   </BrowserRouter>
 );

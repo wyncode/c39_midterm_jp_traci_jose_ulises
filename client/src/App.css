@@ -34,6 +34,9 @@
   background-repeat: no-repeat;
   font-size: 40px;
   margin-top: 0px 0px 0px 0px;
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
 }
 
 .CoverPhoto h1 {
@@ -79,6 +82,13 @@
   );
   border: 1px solid blue;
   padding-bottom: ;
+}
+.navContainer img{
+  height: 10vh;
+  width:10vw;
+  border-radius: 50%; 
+  padding-left: 10px;
+  padding-top: 10px;
 }
 .navbar {
   display: flex;

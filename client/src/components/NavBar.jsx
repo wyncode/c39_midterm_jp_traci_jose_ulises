@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Brewery() {
   return (
     <div className="navContainer">
-      <img src="#" alt="logo" />
+      <img src="https://i.imgur.com/cgRrzDX.png" alt="logo" />
       <ul className="navbar">
         <Link to="/Home">
           <li>Home</li>
