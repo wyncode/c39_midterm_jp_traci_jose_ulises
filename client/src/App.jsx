@@ -5,7 +5,6 @@ import Home from "./Components/Home";
 import BreweryList from "./Components/BreweryList";
 import Brewery from "./Components/Brewery";
 import AboutUs from "./Components/AboutUs";
-import LandingPage from "./Components/LandingPage";
 
 
 const App = () => {
