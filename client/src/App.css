@@ -73,21 +73,23 @@
 
 .navContainer {
   font-family: "BrandonGrotesque", helvetica, sans-serif;
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 5px;
+  padding-left: 0px;
   background: rgb(61, 23, 0);
   background: linear-gradient(
     180deg,
     rgba(61, 23, 0, 1) 2%,
     rgba(0, 0, 0, 0.8603816526610644) 84%
   );
-  border: 1px solid blue;
-  padding-bottom: ;
+ 
 }
 .navContainer img{
-  height: 10vh;
-  width:10vw;
-  border-radius: 50%; 
-  padding-left: 10px;
+  height: 30px;
+  width:30px;
+  padding-left:0px;
   padding-top: 10px;
 }
 .navbar {
@@ -97,6 +99,8 @@
   font-family: "BrandonGrotesque", helvetica, sans-serif;
   font-weight: bold;
   margin: 0;
+  padding-right: 600px;
+
 }
 .navbar li:hover {
   padding: 10px;
@@ -111,6 +115,9 @@
 
 a {
   border: solid 1px green;
+  padding-right:20px;
+  color:#f2af29;
+  text-decoration: none;
 }
 
 .form-row {

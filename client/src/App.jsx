@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import MainPage from "./components/MainPage";
-import LandingPage from "./components/LandingPage";
-import BreweryPage from "./Components/BreweryPage";
-import AboutUs from "./Components/AboutUs";
+import MainPage from "./Pages/MainPage";
+import LandingPage from "./Pages/LandingPage";
+import BreweryPage from "./Pages/BreweryPage";
+import AboutUs from './Pages/AboutUs';
 
 const App = () => (
   <BrowserRouter>

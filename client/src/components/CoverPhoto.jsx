@@ -27,6 +27,7 @@ import Card from 'react-bootstrap/Card';
       };
       fetchData();
     }, [search]);
+    console.log()
     return (
       <div className="CoverPhoto">
         <h1>Git Brew'd</h1>

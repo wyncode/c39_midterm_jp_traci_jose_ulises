@@ -1,7 +1,7 @@
 import React from "react";
-import NavBar from './NavBar';
-import BreweryCard from "./BreweryCard";
-import CoverPhoto from "./CoverPhoto";
+import NavBar from '../components/NavBar';
+import BreweryCard from "../components/BreweryCard";
+import CoverPhoto from "../components/CoverPhoto";
 import Row from "react-bootstrap/Row";
 
 
