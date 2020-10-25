@@ -1,29 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import { AppContextProvider } from './context/AppContext';
-import ContextDemo from './components/ContextDemo';
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./Components/Home";
+import BreweryList from "./Components/BreweryList";
+import Brewery from "./Components/Brewery";
+import AboutUs from "./Components/AboutUs";
+import LandingPage from "./Components/LandingPage";
 
-import './App.css';
 
 const App = () => {
-  const [serverMessage, setServerMessage] = useState('');
-
-  const fetchDemoData = () => {
-    fetch('/api/demo')
-      .then((response) => response.json())
-      .then((data) => setServerMessage(data.message));
-  };
-
-  useEffect(fetchDemoData, []);
+  useEffect(() => {
+    fetch('/api/breweries')
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  }, []);
 
   return (
-    <AppContextProvider>
-      <div id="demo">
-        <h3>Hello from client/src/App.js</h3>
-        <ContextDemo />
-        <h3>{serverMessage}</h3>
-      </div>
-    </AppContextProvider>
-  );
-};
+    <BrowserRouter>
+    {/* this will need to be changed once we pull in our API */}
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/brewery/:location/:term?" component={BreweryList} />
+      <Route path="/brewery/:id" component={Brewery} />
+      <Route exact path="/about" component={AboutUs} />
+    </Switch>
+  </BrowserRouter>
+  )};
 
 export default App;
