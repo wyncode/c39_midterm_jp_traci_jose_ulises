@@ -1,8 +1,6 @@
 import React from "react";
-// import axios from "axios";
-import NavBar from "./NavBar";
+import NavBar from './NavBar';
 import BreweryCard from "./BreweryCard";
-// import SearchForm from "./SearchForm";
 import CoverPhoto from "./CoverPhoto";
 import Row from "react-bootstrap/Row";
 

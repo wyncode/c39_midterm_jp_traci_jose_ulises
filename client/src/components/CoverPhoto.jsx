@@ -3,8 +3,10 @@ import SearchForm from "./SearchForm";
 import axios from "axios";
 
 
+
 const CoverPhoto=(handleSubmitProp)=>{
-  const [search, setSearch] = useState('dog');
+  const [search, setSearch] = useState('san diego');
+  const [apiData , setAPI] = useState({})
 
 
   const handleSubmit = (event) => {
@@ -19,7 +21,7 @@ const CoverPhoto=(handleSubmitProp)=>{
   useEffect(() => {
     const fetchData = async () => {
       let response = await axios.get(
-        `https://api.openbrewerydb.org/breweries/search?query=${search}`
+        `https://api.openbrewerydb.org/breweries?by_city=${search}`
       );
       console.log (response.data)
       // Save the fetch data into the apiData state var

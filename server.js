@@ -4,15 +4,14 @@ if (process.env.NODE_ENV !== 'production') {
 
 const express = require('express');
 const path = require('path');
-const app = express();
 
-// JUST FOR DEMO PURPOSES, PUT YOUR ACTUAL API CODE HERE
-app.get('/api/breweries', async (request, response) => {
-  const { data } = await axios.get(
-    `https://sandbox-api.brewerydb.com/v2/breweries?key=${process.env.API_KEY}`
-  );
-  response.json(data);
-// END DEMO
+
+
+app.get('/api/demo', (request, response) => {
+  response.json({
+    message: 'Hello from server.js'
+  });
+
 
 if (process.env.NODE_ENV === 'production') {
   // Serve any static files

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Brewery() {
+export default function NavBar() {
   return (
     <div className="navContainer">
       <img src="#" alt="logo" />
@@ -19,3 +19,4 @@ export default function Brewery() {
     </div>
   );
 }
+
