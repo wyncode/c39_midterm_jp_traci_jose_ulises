@@ -1,11 +1,23 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import {useParams} from 'react-router-dom'
 import Container from "react-bootstrap/Container";
 
 export default function Brewery() {
+
+  const {id} = useParams()
+  const [apiData, setApiData] = useState({})
+
+ 
+
+  useEffect(() => {
+    fetch(`https://api.openbrewerydb.org/breweries/${id}`).then(res => res.json()).then(data => setApiData(data))
+  }, [])
+
+  console.log("this is coming from brewery page",apiData)
   return (
     <Container className="breweryBody">
       <div className="brewerytitle">
-        <h1 style={{ margin: "1rem 0" }}>Hello Team 5!</h1>
+  <h1 style={{ margin: "1rem 0" }}>{apiData.name}</h1>
       </div>
       {/* <div className="middlebody"> */}
       <div className="brewerypic">

@@ -4,13 +4,15 @@ if (process.env.NODE_ENV !== 'production') {
 
 const express = require('express');
 const path = require('path');
+const app = express()
 
 
 
 app.get('/api/demo', (request, response) => {
   response.json({
     message: 'Hello from server.js'
-  });
+  })
+})
 
 
 if (process.env.NODE_ENV === 'production') {
