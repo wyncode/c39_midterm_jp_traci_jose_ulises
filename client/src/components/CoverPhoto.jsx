@@ -6,28 +6,16 @@ import BreweryCard from "./BreweryCard";
 
 
 const CoverPhoto = () => {
-  const [search, setSearch] = useState("");
+  
   const [apiData, setApiData] = useState([]);
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Take the value of the input box.
-    // console.log(event.target.elements.searchbar.value);
-    // reminder: setSearch is the only way to change the search value.
-    setSearch(event.target.elements.searchbar.value);
+    const {data} = await axios.get(`https://api.openbrewerydb.org/breweries?by_city=${event.target.elements.searchbar.value}`)
+    setApiData(data)
+    
   };
-  // This code only kicks in if "search" ever changes value.
-  useEffect(() => {
-    const fetchData = async () => {
-      let response = await axios.get(
-        `https://api.openbrewerydb.org/breweries?by_city=${search}`
-      );
-      console.log(response.data);
-      // Save the fetch data into the apiData state var
-      setApiData(response.data);
-    };
-    fetchData();
-  }, [search]);
-  console.log(apiData);
+  
+  
   return (
   <>
     <div className="CoverPhoto">
@@ -36,10 +24,10 @@ const CoverPhoto = () => {
     
    </div>
        <div className="brewery">
-        {apiData.map((brewery) => {
+        {apiData && apiData.map((brewery) => {
           return (
           <Row key={brewery.id}> 
-            <BreweryCard  name={brewery.name} city = {brewery.city} />
+            <BreweryCard brewery={brewery} />
           </Row>
           );
         })}
