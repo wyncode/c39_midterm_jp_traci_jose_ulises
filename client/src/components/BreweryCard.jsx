@@ -1,24 +1,18 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
+import {Card} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 
 export default function BreweryCard(props) {
+  console.log(props.name);
+  console.log(props.city);
   return (
-    // <div>
-    //   <h1>This page will house a BreweryCard</h1>
-    // </div>
+  
     <Container>
-      <Card
-        style={{
-          width: "100%",
-          height: "80vh",
-          display: "flex",
-        }}
-      >
-        <Card.Img variant="top" src="holder.js/100px180" />
+      <Card>
+        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body>
-          <Card.Title className="brewName">{props.BreweryName}</Card.Title>
-          <Card.Text className="cardText">Wynwood</Card.Text>
+          <Card.Title className="brewName">{props.name}</Card.Title>
+          <Card.Text className="cardText">{props.city}</Card.Text>
         </Card.Body>
       </Card>
     </Container>
