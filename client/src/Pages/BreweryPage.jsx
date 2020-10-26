@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useParams} from 'react-router-dom'
-import Container from "react-bootstrap/Container";
+import {Container} from "react-bootstrap";
 
 export default function Brewery() {
 
@@ -8,12 +8,11 @@ export default function Brewery() {
   const [apiData, setApiData] = useState({})
 
  
-
   useEffect(() => {
     fetch(`https://api.openbrewerydb.org/breweries/${id}`).then(res => res.json()).then(data => setApiData(data))
   }, [])
 
-  console.log("this is coming from brewery page",apiData)
+  // console.log("this is coming from brewery page",apiData)
   return (
     <Container className="breweryBody">
       <div className="brewerytitle">
@@ -30,20 +29,15 @@ export default function Brewery() {
       </div>
       <div className="brewerylist">
         <ul>
-          <li>Name: Lorem ipsum dolor sit amet,</li>
+        <li>Phone: {apiData.phone}</li>
           <li>
-            Desription: Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Qui dicta minus molestiae vel beatae natus eveniet ratione
-            temporibus aperiam harum alias officiis assumenda officia quibusdam
-            deleniti eos cupiditate dolore doloribus!
-          </li>
-          <li>Phone: Lorem ipsum dolor sit amet</li>
-          <li>
-            Address: Desription:Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit.
+            Address: {apiData.street}
           </li>
           <li>
-            <button className="brewerybtn">Check Out My Website!</button>
+            {apiData.city}, {apiData.state} {apiData.postal_code}
+          </li>
+          <li>
+            <a href={apiData.website_url} target="_blank"><button className="brewerybtn">Check Out My Website!</button></a>
           </li>
         </ul>
       </div>
