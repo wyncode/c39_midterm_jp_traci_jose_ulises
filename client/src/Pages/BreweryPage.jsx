@@ -16,7 +16,6 @@ export default function Brewery() {
       <div className="brewerytitle">
         <h1 style={{ margin: '1rem 0' }}>{apiData.name}</h1>
       </div>
-      {/* <div className="middlebody"> */}
       <div className="brewerypic">
         {apiData.longitude && apiData.latitude && (
           <Map lng={apiData.longitude} lat={apiData.latitude} />
@@ -36,6 +35,6 @@ export default function Brewery() {
           </li>
         </ul>
       </div>
-    </Container>
+      </Container>
   );
 }
