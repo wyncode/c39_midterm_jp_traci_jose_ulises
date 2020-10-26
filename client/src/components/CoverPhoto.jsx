@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
 import SearchForm from "./SearchForm";
 import axios from "axios";
-import {Card} from "react-bootstrap";
+import {Row} from "react-bootstrap";
+import BreweryCard from "./BreweryCard";
+
 
 const CoverPhoto = () => {
   const [search, setSearch] = useState("");
   const [apiData, setApiData] = useState([]);
   const handleSubmit = (event) => {
     event.preventDefault();
-  
+    // Take the value of the input box.
+    // console.log(event.target.elements.searchbar.value);
+    // reminder: setSearch is the only way to change the search value.
     setSearch(event.target.elements.searchbar.value);
   };
   // This code only kicks in if "search" ever changes value.
@@ -25,25 +29,22 @@ const CoverPhoto = () => {
   }, [search]);
   console.log(apiData);
   return (
+  <>
     <div className="CoverPhoto">
       <h1>Git Brew'd</h1>
       <SearchForm handleSubmitProp={handleSubmit} />
-      <div className="brewery">
+    
+   </div>
+       <div className="brewery">
         {apiData.map((brewery) => {
           return (
-            <div className="brewery-card" id="brewery-card" key={brewery.id}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>{brewery.name}</Card.Title>
-                  <Card.Text>{brewery.city}</Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
+          <Row key={brewery.id}> 
+            <BreweryCard  name={brewery.name} city = {brewery.city} />
+          </Row>
           );
         })}
-      </div>
-      );
-    </div>
+      </div> 
+  </>
   );
 };
 export default CoverPhoto;
