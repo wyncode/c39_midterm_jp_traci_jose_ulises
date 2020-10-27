@@ -18,11 +18,9 @@ const MainPage = () => {
   return (
   <>
     <div className="CoverPhoto">
-      <h1 style={{fontSize:"100px", fontWeight:"700", background:"rgba(0, 0, 0, 0.2)"}}>Git Brew'd</h1>
-      <SearchForm handleSubmitProp={handleSubmit} />
-      <img src={bottle} alt="beerBottle" className="bottle bottleSpin"
-      style={{height:"200px", width:"200px", display:"block", marginLeft:"auto", marginRight:"auto"}}/>
-    
+      <h1 style={{fontSize:"150px", fontWeight:"700", background:"rgba(0, 0, 0, 0.1)"}}>Git Brew'd</h1>
+      <SearchForm handleSubmitProp={handleSubmit}/>
+      
    </div>
        <div className="brewery" styles={{width: "100%"}}>
         {apiData && apiData.map((brewery) => {
