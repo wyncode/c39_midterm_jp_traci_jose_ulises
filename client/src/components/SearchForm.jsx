@@ -11,7 +11,8 @@ const SearchForm = ({ handleSubmitProp }) => {
           size="lg"
           type="text"
           placeholder="Enter a City!"
-        ></Form.Control>
+        >
+        </Form.Control>
       </Form.Row>
     </Form>
   );

@@ -1,16 +1,16 @@
 import React from "react";
 import {Card} from "react-bootstrap";
 import {Container} from "react-bootstrap";
-import {useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom';
 
-export default function BreweryCard({brewery}) {
+
+export default function BreweryCard({brewery, bgColors}) {
   const history = useHistory()
-  
-  
-
   const handleClick = (id) => {
-    history.push(`/brewery/${id}`)
+  history.push(`/brewery/${id}`)
   }
+   
+
   return (
   
     <Container >

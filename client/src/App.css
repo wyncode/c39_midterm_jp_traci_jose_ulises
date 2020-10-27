@@ -38,6 +38,18 @@
   justify-content: center;
   flex-direction: column;
 }
+/* .CoverPhoto img{
+  animation:rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+} */
+
 
 .CoverPhoto h1 {
   text-align: center;
