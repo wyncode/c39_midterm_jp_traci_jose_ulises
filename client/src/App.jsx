@@ -8,7 +8,6 @@ import BreweryPage from "./Pages/BreweryPage";
 
 const App = () => (
   <BrowserRouter>
-    {/* this will need to be changed once we pull in our API */}
     <Switch>
       <Route exact path="/" component={LandingPage} />
       <Route exact path="/Home" component={MainPage} />

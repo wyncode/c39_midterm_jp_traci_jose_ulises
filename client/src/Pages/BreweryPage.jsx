@@ -21,27 +21,27 @@ export default function Brewery() {
       <div className="brewerytitle">
         <h1>{apiData.name}</h1>
       </div>
-      <div className="brewbod">
-        <div className="brewerypic">
-          {apiData.longitude && apiData.latitude && (
-            <Map lng={apiData.longitude} lat={apiData.latitude} />
-          )}
-        </div>
-        <div className="brewerylist">
-          <ul className="bussinessInfo">
-            <li className="phoneNum">Phone: {apiData.phone}</li>
-            <li className="address">Address: {apiData.street}</li>
-            <li>
-              {apiData.city}, {apiData.state} {apiData.postal_code}
-            </li>
-            <li className="brewbutton">
-              <a href={apiData.website_url} target="_blank">
-                <button className="brewerybtn">Visit their website!</button>
-              </a>
-            </li>
-          </ul>
-        </div>
+
+      <div className="brewerypic">
+        {apiData.longitude && apiData.latitude ? (
+          <Map lng={apiData.longitude} lat={apiData.latitude} /> 
+        ): <div><img alt="Beer" src={'https://images.unsplash.com/photo-1552831125-32128105ea04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80'}/></div>}
       </div>
-    </Container>
+      <div className="brewerylist">
+        <ul>
+          <li>Phone: {apiData.phone || 'Not Listed'}</li>
+          <li>Address: {apiData.street || 'Not Listed'}</li>
+          <li>
+            {apiData.city || 'Not Listed'}, {apiData.state || 'Not Listed'} {apiData.postal_code || 'Not Listed'}
+          </li>
+          <li>
+            {apiData.websiteUrl &&   <a href={apiData.website_url} target="_blank">
+              <button className="brewerybtn">Check Out My Website!</button>
+            </a> }
+          
+          </li>
+        </ul>
+      </div>
+      </Container>
   );
 }

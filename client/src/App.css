@@ -1,12 +1,26 @@
+h1 {
+  font-size: 125px;
+  letter-spacing: 0.05em;
+  background-color: rgba(0, 0, 0, 0.10);
+  padding: 1rem;
+  color: #f2af29;
+}
+
 .cover {
   background-image: url('https://i.imgur.com/LaqvZvC.jpg');
   background-size: 100%;
-  height: 120vh;
+  height: 100vh;
   background-repeat: no-repeat;
   color: whitesmoke;
-  padding: 5rem;
-  font-size: 40px;
+  font-size: 50px;
   font-family: monospace;
+  font-weight: bold;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 100px;
 }
 
 #gitBrewd {
@@ -16,8 +30,10 @@
   margin: 0 auto;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 0.17em solid #f2af29;
+  border-right: .17em solid #f2af29;
   animation: typing 3.5s steps(30, end), blinking-cursor 0.5s step-end infinite;
+  font-size: 110px;
+  font-weight: bold;
 }
 @keyframes typing {
   from {
@@ -38,7 +54,36 @@
   justify-content: center;
   flex-direction: column;
 }
+.bottleSpin{
+  animation:rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
 
+.row{
+  background-image:url(./Photos/orange.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.row:nth-of-type(even){
+  background-image:url(./Photos/blue.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.card{
+  background:transparent;
+  height:500px;
+  width:450px;
+  border: none;
+  padding-left:auto;
+}
 .CoverPhoto h1 {
   text-align: center;
   font-family: monospace;
@@ -49,6 +94,14 @@
   white-space: nowrap;
   border-right: 0.17em solid #f2af29;
   animation: typing 3.5s steps(30, end), blinking-cursor 0.5s step-end infinite;
+  font-size: 110px;
+}
+h6 {
+  font-size: 25px;
+  padding: 1rem;
+  margin: 0 auto;
+  position: relative;
+  min-height: 25px;
 }
 @keyframes typing {
   from {
@@ -60,7 +113,9 @@
 }
 
 .btn {
-  background-color: #f2af29;
+  background-color: transparent;
+  border: 2px solid white;
+
   color: white;
   font-size: 35px;
 }
@@ -70,6 +125,13 @@
   justify-content: space-evenly;
   align-items: flex-start;
   margin-left: 0px;
+}
+
+
+.divider{
+  width:110px;
+  height:auto;
+  display:inline-block;
 }
 
 .App {
@@ -87,6 +149,7 @@
   align-items: center;
 }
 
+
 .TopPicks {
   justify-content: center;
   color: whitesmoke;
@@ -100,6 +163,7 @@
   font-weight: bold;
   margin: 0;
 }
+
 
 .brewName {
   display: flex;
@@ -158,8 +222,8 @@
 }
 
 .marker-icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 body {
