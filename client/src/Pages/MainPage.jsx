@@ -14,13 +14,15 @@ const MainPage = () => {
     const {data} = await axios.get(`https://api.openbrewerydb.org/breweries?by_city=${event.target.elements.searchbar.value}`)
     setApiData(data)
   };
-  
+
+
   return (
   <>
     <div className="CoverPhoto">
       <h1 style={{fontSize:"100px", fontWeight:"700", background:"rgba(0, 0, 0, 0.2)"}}>Git Brew'd</h1>
       <SearchForm handleSubmitProp={handleSubmit} />
-      <img src={GitBrewd} alt="beerBottle" style={{height:"200px", width:"200px", display:"block", marginLeft:"auto", marginRight:"auto"}}/>
+      <img src={GitBrewd} alt="beerBottle" className="bottle bottleSpin"
+      style={{height:"200px", width:"200px", display:"block", marginLeft:"auto", marginRight:"auto"}}/>
     
    </div>
        <div className="brewery" styles={{width: "100%"}}>
