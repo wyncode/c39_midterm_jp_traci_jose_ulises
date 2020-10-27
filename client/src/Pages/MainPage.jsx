@@ -19,7 +19,7 @@ const MainPage = () => {
   return (
   <>
     <div className="CoverPhoto">
-      <h1>Git Brew'd</h1>
+      <h1 style={{fontSize:"100px", fontWeight:"700"}}>Git Brew'd</h1>
       <SearchForm handleSubmitProp={handleSubmit} />
     
    </div>

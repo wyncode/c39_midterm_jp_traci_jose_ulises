@@ -89,22 +89,6 @@
   align-items: center;
 }
 
-.TopPicks {
-  justify-content: center;
-  color: whitesmoke;
-  background-size: cover;
-  background-position: center;
-}
-
-
-.cardText {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-
-  margin: 0;
-}
-
 .brewName {
   display: flex;
   justify-content: center;
