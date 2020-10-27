@@ -54,7 +54,36 @@ h1 {
   justify-content: center;
   flex-direction: column;
 }
+.bottleSpin{
+  animation:rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
 
+.row{
+  background-image:url(./Photos/orange.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.row:nth-of-type(even){
+  background-image:url(./Photos/blue.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.card{
+  background:transparent;
+  height:500px;
+  width:450px;
+  border: none;
+  padding-left:auto;
+}
 .CoverPhoto h1 {
   text-align: center;
   font-family: monospace;
@@ -121,22 +150,6 @@ h6 {
   align-items: center;
 }
 
-.TopPicks {
-  justify-content: center;
-  color: whitesmoke;
-  background-size: cover;
-  background-position: center;
-}
-
-
-.cardText {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-
-  margin: 0;
-}
-
 .brewName {
   display: flex;
   justify-content: center;
@@ -186,6 +199,6 @@ h6 {
 }
 
 .marker-icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
