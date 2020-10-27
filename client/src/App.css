@@ -49,20 +49,14 @@ body {
 .button12 {
   padding: 0.3rem;
   margin-left: 0px;
+  border: 1px red solid;
 }
 
 .btn {
   background-color: transparent;
-  border: 2px solid white;
   background-color: #f2af29;
   color: white;
   font-size: 35px;
-}
-
-.divider {
-  width: 110px;
-  height: auto;
-  display: inline-block;
 }
 
 /* End of Landing Page */
@@ -168,7 +162,7 @@ body {
 }
 
 .brewerytitle {
-  color: gold;
+  color: #f2af29;
   margin-left: 50px;
 }
 
@@ -197,7 +191,7 @@ body {
   padding-right: 35%;
   padding-left: 5%;
   font-size: 180%;
-  color: orange;
+  color: #f2af29;
   text-shadow: 10px 4px 4px black;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
@@ -241,7 +235,7 @@ body {
 
 .bussinessInfo {
   padding: 0;
-  border: red solid 2px;
+  /* border: red solid 2px; */
 }
 
 .brewerybtn {
@@ -263,10 +257,8 @@ body {
 }
 
 .noMap {
-  margin-left: 8%;
   max-width: 75%;
   height: 80%;
-  border: orange 1px solid;
   box-shadow: 10px 10px 8px black;
 }
 
