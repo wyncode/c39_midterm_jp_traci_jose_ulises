@@ -12,7 +12,7 @@ const LandingPage = () => {
       <h6>You Must be 21 Year or Older to Enter this Site</h6>
       <div className="button12">
       <Link to="/Home"><button className="btn" id="btn1">I'm 21 or Older</button></Link>
-      <div class="divider" >
+      <div class="divider" />
       <button id="btn2" className="btn" onClick = {()=>{
         alert('Sorry! You must be 21 to enter!')
       }} >I'm under 21</button>
