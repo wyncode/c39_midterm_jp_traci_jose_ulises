@@ -1,19 +1,38 @@
-import React from "react";
-import NavBar from "../components/NavBar";
-import BreweryCard from "../components/BreweryCard";
-import CoverPhoto from "../components/CoverPhoto";
+import React, { useState } from "react";
+import SearchForm from "../components/SearchForm";
+import axios from "axios";
 import {Row} from "react-bootstrap";
+import BreweryCard from "../components/BreweryCard";
 
 
-export default function Home() {
+const MainPage = () => {
+  
+  const [apiData, setApiData] = useState([]);
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const {data} = await axios.get(`https://api.openbrewerydb.org/breweries?by_city=${event.target.elements.searchbar.value}`)
+    setApiData(data)
+    
+  };
+  
   
   return (
-    <>
-      <NavBar />
-      <CoverPhoto />
-      {/* <Row className="TopPicks">
-        <BreweryCard/>
-      </Row> */}
-    </>    
-  )
+  <>
+    <div className="CoverPhoto">
+      <h1>Git Brew'd</h1>
+      <SearchForm handleSubmitProp={handleSubmit} />
+    
+   </div>
+       <div className="brewery">
+        {apiData && apiData.map((brewery) => {
+          return (
+          <Row key={brewery.id}> 
+            <BreweryCard brewery={brewery} />
+          </Row>
+          );
+        })}
+      </div> 
+  </>
+  );
 };
+export default MainPage;
