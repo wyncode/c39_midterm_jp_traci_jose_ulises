@@ -14,6 +14,7 @@ export default function Brewery() {
   }, []);
   return (
     <Container className="breweryBody">
+      {/* <button className="backbtn" onClick></button> */}
       <Link to="/Home">
         <button className="backbtn"></button>
       </Link>
@@ -25,7 +26,7 @@ export default function Brewery() {
           {apiData.longitude && apiData.latitude ? (
             <Map lng={apiData.longitude} lat={apiData.latitude} />
           ) : (
-            <div>
+            <div className="noMap">
               <img
                 alt="Beer"
                 src={
@@ -46,9 +47,11 @@ export default function Brewery() {
               {apiData.postal_code || 'Not Listed'}
             </li>
             <li className="brewbutton">
-              <a href={apiData.website_url} target="_blank">
-                <button className="brewerybtn">Visit their website!</button>
-              </a>
+              {apiData.website_url && (
+                <a href={apiData.website_url} target="_blank">
+                  <button className="brewerybtn">Check Out My Website!</button>
+                </a>
+              )}
             </li>
           </ul>
         </div>

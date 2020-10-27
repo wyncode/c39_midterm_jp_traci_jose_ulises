@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMapboxGl, { Marker, ZoomControl } from 'react-mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import bottle from "../Photos/bottle.png";
+import bottle from '../Photos/bottle.png';
 
 const MapBox = ReactMapboxGl({
   accessToken: process.env.REACT_APP_MAPBOX_API_KEY
@@ -13,7 +13,7 @@ const Map = ({ lat, lng }) => {
       style="mapbox://styles/mapbox/streets-v9"
       containerStyle={{
         height: '300px',
-        width: '450px'
+        width: '425px'
       }}
       center={[lng, lat]}
     >

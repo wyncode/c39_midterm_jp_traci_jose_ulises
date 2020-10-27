@@ -253,5 +253,24 @@ body {
   background-repeat: no-repeat;
   border: transparent;
   margin: 2px;
-  border: red solid 2px;
+}
+
+.noMap {
+  margin-left: 8%;
+  max-width: 75%;
+  height: 80%;
+  border: orange 1px solid;
+  box-shadow: 10px 10px 8px black;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: lightblue;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .brewbod {
+    flex-direction: column;
+  }
 }
