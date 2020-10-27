@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 const LandingPage = () => {
   return (
     <div className="cover">
-      <h1>Welcome to </h1>
-      <h1 id="gitBrewd">Git Brew'd</h1>
-      <p>Hop finder for Web Developers</p>
-      <h6>You Must be 21 Year or Older to Enter this Site</h6>
+      <h1 class="welcome">Welcome to</h1>
+      <h1 id="gitBrewd"> Git Brew'd</h1>
+      <p class="hopDev">Hop finder for Web Developers</p>
+      <h6 class="age">You Must be 21 Year or Older to Enter this Site</h6>
       <div className="button12">
         <Link to="/Home">
           <button className="btn" id="btn1">
