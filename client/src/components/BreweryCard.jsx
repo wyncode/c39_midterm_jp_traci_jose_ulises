@@ -6,8 +6,7 @@ import {useHistory} from 'react-router-dom'
 export default function BreweryCard({brewery}) {
   const history = useHistory()
   
-  // console.log(props.name);
-  // console.log(props.city);
+  
 
   const handleClick = (id) => {
     history.push(`/brewery/${id}`)
@@ -16,7 +15,6 @@ export default function BreweryCard({brewery}) {
   
     <Container>
       <Card onClick={() => handleClick(brewery.id)}>
-        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body>
           <Card.Title className="brewName">{brewery.name}</Card.Title>
           <Card.Text className="cardText">{brewery.city}</Card.Text>

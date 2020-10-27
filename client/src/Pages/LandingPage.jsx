@@ -10,11 +10,13 @@ const LandingPage = () => {
       <h1 id="gitBrewd">Git Brew'd</h1>
       <p>Hop finder for Web Developers</p>
       <h6>You Must be 21 Year or Older to Enter this Site</h6>
-      <Link to="/Home"><button className="btn" >I'm 21 or Older</button></Link>
-      <button className="btn" onClick = {()=>{
+      <div className="button12">
+      <Link to="/Home"><button className="btn" id="btn1">I'm 21 or Older</button></Link>
+      <div class="divider" >
+      <button id="btn2" className="btn" onClick = {()=>{
         alert('Sorry! You must be 21 to enter!')
       }} >I'm under 21</button>
-    
+      </div>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 const MapBox = ReactMapboxGl({
   accessToken: process.env.REACT_APP_MAPBOX_API_KEY
 });
+console.log(process.env.REACT_APP_MAPBOX_API_KEY)
 const Map = ({ lat, lng }) => {
   return (
     <MapBox
