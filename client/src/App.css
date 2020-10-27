@@ -1,19 +1,30 @@
+
 /* this is global */
 body {
   background-image: url('https://i.imgur.com/5QINrq7.jpg');
   background-size: 75%;
 }
 
-/* This is the CSS for LandingPage */
+
 .cover {
   background-image: url('https://i.imgur.com/LaqvZvC.jpg');
   background-size: 100%;
-  height: 120vh;
+  height: 100vh;
   background-repeat: no-repeat;
   color: whitesmoke;
   padding: 5rem;
   font-size: 50px;
   font-family: monospace;
+  font-weight: bold;
+}
+
+.welcome {
+  font-size: 125px;
+  letter-spacing: 0.05em;
+  background-color: rgba(0, 0, 0, 0.10);
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
 }
 
 #gitBrewd {
@@ -23,9 +34,41 @@ body {
   margin: 0 auto;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 0.17em solid #f2af29;
+  border-right: .17em solid #f2af29;
   animation: typing 3.5s steps(30, end), blinking-cursor 0.5s step-end infinite;
+  font-size: 110px;
+  font-weight: bold;
 }
+
+.age {
+  font-size: 25px;
+  padding: 1rem;
+  margin: 0 auto;
+  position: relative;
+  min-height: 25px;
+}
+
+.button12 {
+  padding: .3rem;
+  margin-left: 0px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid white;
+  background-color: #f2af29;
+  color: white;
+  font-size: 35px;
+}
+
+.divider{
+  width:110px;
+  height:auto;
+  display:inline-block;
+}
+
+/* End of Landing Page */
+
 @keyframes typing {
   from {
     width: 0;
@@ -99,6 +142,7 @@ body {
   font-size:40px; 
   margin:auto;
   text-align: center;
+
 }
 .breweryPhoto{
   height:190px;
@@ -126,46 +170,54 @@ body {
 
 
 
-/* This is the CSS for the Brewery Page */
 
 .breweryBody {
   min-height: 100vh;
-  display: grid;
-  column-gap: 0vh;
-  grid-template-areas:
-    'header header header header'
-    'main right right right'
-    'main right right right'
-  
 }
 
 .brewerytitle {
-  grid-area: header;
- 
+  color: gold;
+  margin-left: 50px;
 }
 
 .brewerytitle h1 {
-  padding-left: 35%;
+  display: flex;
+  justify-content: center;
+  font-size: 450%;
+  text-shadow: 10px 4px 5px black;
+  font-family: monospace;
+  font-weight: bold;
 }
 
 .brewerypic {
-  grid-area: 2 / 1 / 3 / 3;
-  padding-left: 15%;
-  max-width: 100%;
-  height: auto;
-}
-
-
-.brewerylist {
-  grid-area: 2 / 3 / 3 / 6;
-  
+  margin-left: 8%;
+  max-width: 75%;
+  height: 80%;
+  border: orange 1px solid;
+  box-shadow: 10px 10px 8px black;
 }
 
 .brewerylist li {
+  display: flex;
+  justify-content: center;
   list-style-type: none;
   padding: 1rem;
   padding-right: 35%;
   padding-left: 5%;
+  font-size: 180%;
+  color: orange;
+  text-shadow: 10px 4px 4px black;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  padding: 0px 10px 0px 10px;
+}
+
+.brewerylist .phoneNum {
+  padding: 15% 0 0 0;
+}
+
+.brewerylist .brewbutton {
+  padding: 5% 0 0 0;
 }
 .backbtn {
   background-color: transparent;
@@ -183,4 +235,36 @@ body {
 .marker-icon {
   width: 30px;
   height: 30px;
+}
+
+body {
+  background-image: url('https://i.imgur.com/5QINrq7.jpg');
+  background-size: 75%;
+}
+
+.brewbod {
+  display: flex;
+  margin: 5%;
+}
+
+.bussinessInfo {
+  padding: 0;
+}
+
+.brewerybtn {
+  box-shadow: 10px 10px 8px black;
+  background-color: transparent;
+  color: rgb(255, 123, 0);
+}
+
+.backbtn {
+  background-color: transparent;
+  background-image: url('https://i.imgur.com/kn0Exll.png');
+  background-size: 100%;
+  width: 40px;
+  height: 30px;
+  -top: 20px;
+  background-repeat: no-repeat;
+  border: transparent;
+  margin: 2px;
 }
