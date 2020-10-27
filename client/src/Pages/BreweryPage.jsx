@@ -17,21 +17,22 @@ export default function Brewery() {
         <h1 style={{ margin: '1rem 0' }}>{apiData.name}</h1>
       </div>
       <div className="brewerypic">
-        {apiData.longitude && apiData.latitude && (
-          <Map lng={apiData.longitude} lat={apiData.latitude} />
-        )}
+        {apiData.longitude && apiData.latitude ? (
+          <Map lng={apiData.longitude} lat={apiData.latitude} /> 
+        ): <div><img alt="Beer" src={'https://images.unsplash.com/photo-1552831125-32128105ea04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80'}/></div>}
       </div>
       <div className="brewerylist">
         <ul>
-          <li>Phone: {apiData.phone}</li>
-          <li>Address: {apiData.street}</li>
+          <li>Phone: {apiData.phone || 'Not Listed'}</li>
+          <li>Address: {apiData.street || 'Not Listed'}</li>
           <li>
-            {apiData.city}, {apiData.state} {apiData.postal_code}
+            {apiData.city || 'Not Listed'}, {apiData.state || 'Not Listed'} {apiData.postal_code || 'Not Listed'}
           </li>
           <li>
-            <a href={apiData.website_url} target="_blank">
+            {apiData.websiteUrl &&   <a href={apiData.website_url} target="_blank">
               <button className="brewerybtn">Check Out My Website!</button>
-            </a>
+            </a> }
+          
           </li>
         </ul>
       </div>
