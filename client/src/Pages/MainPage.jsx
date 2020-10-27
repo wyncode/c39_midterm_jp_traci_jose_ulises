@@ -28,7 +28,7 @@ const MainPage = () => {
     
     };
     
-    
+
   
   return (
   <>
@@ -40,12 +40,12 @@ const MainPage = () => {
        <div className="brewery" styles={{width: "100%"}}>
         {apiData && apiData.map((brewery, index) => {
           return (
-          <Row key={brewery.id}   className={
+          <Row key={brewery.id} id="mainPageRow"  className={
             index % 3 === 0
-              ? "pink"
+              ? "yellow"
               : index % 2 === 0
-              ? "aquamarine"
-              : "white"
+              ? "blue"
+              : "beerBubbles"
           }> 
             <BreweryCard brewery={brewery}/>
           </Row>
