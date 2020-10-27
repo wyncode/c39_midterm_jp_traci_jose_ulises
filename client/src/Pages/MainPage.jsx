@@ -3,8 +3,7 @@ import SearchForm from "../components/SearchForm";
 import axios from "axios";
 import {Row} from "react-bootstrap";
 import BreweryCard from "../components/BreweryCard";
-import GitBrewd from "../Photos/GitBrewd.png"
-
+import bottle from "../Photos/bottle.png"
 
 const MainPage = () => {
   
@@ -21,7 +20,7 @@ const MainPage = () => {
     <div className="CoverPhoto">
       <h1 style={{fontSize:"100px", fontWeight:"700", background:"rgba(0, 0, 0, 0.2)"}}>Git Brew'd</h1>
       <SearchForm handleSubmitProp={handleSubmit} />
-      <img src={GitBrewd} alt="beerBottle" className="bottle bottleSpin"
+      <img src={bottle} alt="beerBottle" className="bottle bottleSpin"
       style={{height:"200px", width:"200px", display:"block", marginLeft:"auto", marginRight:"auto"}}/>
     
    </div>
