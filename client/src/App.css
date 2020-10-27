@@ -49,8 +49,31 @@
     transform: rotate(180deg);
   }
 } */
-
-
+.card{
+  background: transparent;
+  border:none;
+}
+.row{
+  background:#3357b7;
+}
+.row:nth-of-type(even){
+background: #f2af29;
+}
+.card{
+  height:70vh;
+  border-radius:5%; 
+  padding-left: 40px;
+  text-align: center;
+  width:100%;
+  padding-top: 150px;
+}
+.card h1{
+  font-size: 5rem;
+  font-family: monospace;
+}
+.card h5{
+  font-size:3rem;
+}
 .CoverPhoto h1 {
   text-align: center;
   font-family: monospace;
