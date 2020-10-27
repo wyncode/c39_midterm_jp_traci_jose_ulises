@@ -38,7 +38,7 @@ const MainPage = () => {
       <h1 style={{fontSize:"150px", fontWeight:"700", textAlign:"left",
   fontFamily: "monospace", color: "whitesmoke", marginLeft: "10px", width: "600px"}}>Brew'd</h1>
       <div style={{display:"flex", justifyContent:"space-between"}}>
-      <h3 style={{marginTop: "50px", fontSize:"100px", color:"whitesmoke", fontWeight:"600", backgroundColor:"#2E2E2E", width:"700px"}}>Brewery Finder</h3>
+      <h3 style={{marginTop: "50px", fontSize:"100px", color:"whitesmoke", fontWeight:"600", backgroundColor:"#3357b7", width:"700px"}}>Brewery Finder</h3>
       <SearchForm handleSubmitProp={handleSubmit} loading={loading}/>
       </div>
    </div>
