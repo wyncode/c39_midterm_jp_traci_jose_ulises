@@ -29,7 +29,7 @@ const MainPage = () => {
         {apiData && apiData.map((brewery) => {
           return (
           <Row key={brewery.id}> 
-            <BreweryCard brewery={brewery} />
+            <BreweryCard brewery={brewery}/>
           </Row>
           );
         })}
