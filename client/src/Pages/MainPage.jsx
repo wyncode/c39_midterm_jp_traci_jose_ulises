@@ -12,6 +12,7 @@ const MainPage = () => {
    
   const handleSubmit = async (event) => {
     event.preventDefault();
+    const form = event.target
     setLoading(true)
    
     try {
@@ -20,6 +21,7 @@ const MainPage = () => {
         setApiData(data)
         setLoading(false)
       }, 3000);
+      form.reset()
    
     } catch (error) {
       console.log(error)
