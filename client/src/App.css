@@ -173,14 +173,12 @@
 }
 
 /* For Brewery Page */
-body{
+
+.breweryBody {
+  min-height: 100vh;
   background-image: url(./Photos/Bar.png);
   background-size: cover;
   background-repeat: repeat;
-}
-.breweryBody {
-  min-height: 100vh;
-
 
 }
 
