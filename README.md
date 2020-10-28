@@ -7,19 +7,19 @@ Is the the most reliable place to search for local Breweries by city name wherev
 
 ## Status
 
-It's a prototype.
+Git Brew'd 1.0
 
 ## Screenshots
-- To be added
+![](../client/src/photos/ScreenShot.png)
 
 
 ## Why
 
-We decided that even web developers needed a place to look for breweries.
+We decided that even web developers need a place to look for breweries. And also is a great way to support local Breweries during COVID times.
 
 ## Who are we?
 
-We are a group of people who love working on web dev projects but also love to find the right place to drink a nice cold beer.
+We are a group of people who love working on web dev projects but also love to find the right place to drink a nice cold beer. For the common developer by the common developer.
 
 ## Setup
 
@@ -32,7 +32,6 @@ We are a group of people who love working on web dev projects but also love to f
 
 - `axios` run command `$ yarn add axios`
 - `express` run command ` yarn add express --save`
-- `react-bootstrap` run command `yarn add react-bootstrap bootstrap`
 - `react-mapbox-gl` run command `yarn add react-mapbox-gl mapbox-gl --save`
 - `MUST GET a mapbox token in order to function`
 - `react-promise-tracker` run command `yarn add react-promise-tracker --save`
@@ -53,6 +52,3 @@ You can go to [http://localhost:3000](http://localhost:3000) to view your local 
 
 ## Testing
 - Not testing required.
-
-
-
