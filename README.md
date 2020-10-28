@@ -10,7 +10,7 @@ Is the the most reliable place to search for Breweries by city name wherever you
 It's a prototype.
 
 ## Screenshots
-- To be added
+![image info](../client/src/photos/ScreenShot.png)
 
 
 ## Why
