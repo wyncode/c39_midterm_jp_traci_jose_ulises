@@ -3,14 +3,14 @@
 
 ## What is it?
 
-Is the the most reliable place to search for local Breweries by city wherever you are in the United States. It's the best place to find your next Brewery visit.
+Is the the most reliable place to search for local Breweries by city name wherever you are in United States. It's the best place to find your next Brewery visit.
 
 ## Status
 
 Git Brew'd 1.0
 
 ## Screenshots
-![image info](../client/src/photos/ScreenShot.png)
+![](../client/src/photos/ScreenShot.png)
 
 
 ## Why

@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 
-/* this is global */
-body {
-  background-image: url('https://i.imgur.com/5QINrq7.jpg');
-  background-size: 75%;
-}
-
-
+/*this is the landing page*/
 .cover {
   background-image: url('https://i.imgur.com/LaqvZvC.jpg');
   background-size: 100%;
@@ -22,7 +16,7 @@ body {
 .welcome {
   font-size: 125px;
   letter-spacing: 0.05em;
-  background-color: rgba(0, 0, 0, 0.10);
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 1rem;
   color: white;
   font-weight: bold;
@@ -35,7 +29,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   white-space: nowrap;
-  border-right: .17em solid #f2af29;
+  border-right: 0.17em solid #f2af29;
   animation: typing 3.5s steps(30, end), blinking-cursor 0.5s step-end infinite;
   font-size: 110px;
   font-weight: bold;
@@ -58,24 +52,22 @@ body {
 }
 
 .button12 {
-  padding: .3rem;
+  padding: 0.3rem;
   margin-left: 0px;
- 
 }
 
 .btn {
   background-color: transparent;
-  border: 2px solid white;
   background-color: #f2af29;
   color: white;
   font-size: 35px;
 }
 
-.divider{
+.divider {
   width: 110px;
-  height:auto;
-  display:inline-block;
-} 
+  height: auto;
+  display: inline-block;
+}
 
 /* End of Landing Page */
 
@@ -92,10 +84,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 250px;
   background-color:#3357b7;
   background-size: cover;
-  height: 30vh;
+  height: 25vh;
   width:100%;
   font-family: "Syne Mono", monospace;
   font-weight:700;
@@ -162,8 +154,8 @@ body {
 
 /* this switches the backgrounds of the cards */
 .blue {
-  background-image:url(./Photos/blue.png);
-  background-size:cover;
+  background-image: url(./Photos/blue.png);
+  background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
 }
@@ -184,10 +176,14 @@ body {
 
 .breweryBody {
   min-height: 100vh;
+  background-image: url(./Photos/Bar.png);
+  background-size: cover;
+  background-repeat: repeat;
+
 }
 
 .brewerytitle {
-  color: gold;
+  color: #f2af29;
   margin-left: 50px;
 }
 
@@ -196,8 +192,10 @@ body {
   justify-content: center;
   font-size: 450%;
   text-shadow: 10px 4px 5px black;
-  font-family: monospace;
+  font-family: 'Syne Mono', monospace;
   font-weight: bold;
+  overflow-wrap: break-word;
+  text-align: center;
 }
 
 .brewerypic {
@@ -215,11 +213,11 @@ body {
   padding: 1rem;
   padding-right: 35%;
   padding-left: 5%;
-  font-size: 180%;
-  color: orange;
-  text-shadow: 10px 4px 4px black;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-size: 165%;
+  color: goldenrod;
+  text-shadow: 3px 3px 2px black;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 0px 10px 0px 10px;
 }
 
@@ -230,16 +228,39 @@ body {
 .brewerylist .brewbutton {
   padding: 5% 0 0 0;
 }
+
+.city{
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.brewbod {
+  display: flex;
+  margin: 5%;
+  justify-content: space-between;
+}
+.bussinessInfo {
+  padding: 0;
+}
+.websiteBtn {
+  box-shadow: 10px 10px 8px black;
+  background-color: rgba(42, 24, 23, 0.8);
+  color: goldenrod;
+}
+
 .backbtn {
   background-color: transparent;
-  background-image: url('https://i.imgur.com/kn0Exll.png');
-  background-size: 100%;
-  width: 40px;
-  height: 30px;
-  -top: 20px;
-  background-repeat: no-repeat;
+  color:whitesmoke;
   border: transparent;
-  margin: 2px;
+}
+.arrow{
+  margin-top: 40px;
+}
+
+.noMap {
+  max-width: 75%;
+  height: 80%;
+  box-shadow: 10px 10px 8px black;
 }
 
 /* this is the CSS for the Map */
@@ -248,34 +269,18 @@ body {
   height: 30px;
 }
 
-body {
-  background-image: url('https://i.imgur.com/5QINrq7.jpg');
-  background-size: 75%;
-}
 
-.brewbod {
-  display: flex;
-  margin: 5%;
-}
 
-.bussinessInfo {
-  padding: 0;
-}
 
-.brewerybtn {
-  box-shadow: 10px 10px 8px black;
-  background-color: transparent;
-  color: rgb(255, 123, 0);
-}
-
-.backbtn {
-  background-color: transparent;
-  background-image: url('https://i.imgur.com/kn0Exll.png');
-  background-size: 100%;
-  width: 40px;
-  height: 30px;
-  -top: 20px;
-  background-repeat: no-repeat;
-  border: transparent;
-  margin: 2px;
+/* this the intial attempt to get app to work on other devices */
+@media only screen and (max-width: 600px) {
+  body {
+    background: lightblue;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .brewbod {
+    flex-direction: column;
+  }
 }
