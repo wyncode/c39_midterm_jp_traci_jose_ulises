@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Map from '../components/Map';
 import { Link } from 'react-router-dom';
+import NoMap from '../Photos/NoMap.png';
 export default function Brewery() {
   const { id } = useParams();
   const [apiData, setApiData] = useState({});
@@ -25,12 +26,7 @@ export default function Brewery() {
             <Map lng={apiData.longitude} lat={apiData.latitude} />
           ) : (
             <div>
-              <img
-                alt="Beer"
-                src={
-                  'https://images.unsplash.com/photo-1552831125-32128105ea04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80'
-                }
-              />
+              <img alt="Beer" src={NoMap} />
             </div>
           )}
         </div>
