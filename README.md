@@ -10,7 +10,7 @@ Is the the most reliable place to search for local Breweries by city name wherev
 Git Brew'd 1.0
 
 ## Screenshots
-![](../client/src/photos/ScreenShot.png)
+![](https://files.willkennedy.dev/traci_midterm/traci.png)
 
 
 ## Why
@@ -34,7 +34,6 @@ We are a group of people who love working on web dev projects but also love to f
 - `express` run command ` yarn add express --save`
 - `react-mapbox-gl` run command `yarn add react-mapbox-gl mapbox-gl --save`
 - `MUST GET a mapbox token in order to function`
-- `react-promise-tracker` run command `yarn add react-promise-tracker --save`
 
 ## Available build commands
 
@@ -43,11 +42,8 @@ We are a group of people who love working on web dev projects but also love to f
 - `yarn client`: Runs JUST your front-end React app.
 
 
-## To deploy
-
-You can go to [http://localhost:3000](http://localhost:3000) to view your local React app in the browser. The page will reload if you make edits.
-
-- ` Runs on heroku`
+## Runs on Herkoku
+https://gitbrewd.herokuapp.com/
 
 
 ## Testing
