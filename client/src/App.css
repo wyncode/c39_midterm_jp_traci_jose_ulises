@@ -180,8 +180,6 @@
 
 .brewerytitle {
   color: #f2af29;
-  margin-left: 50px;
-  /* border: red 2px solid; */
 }
 
 .brewerytitle h1 {
@@ -196,7 +194,6 @@
 }
 
 .brewerypic {
-  margin-left: 8%;
   max-width: 75%;
   height: 80%;
   border: orange 1px solid;
@@ -212,12 +209,17 @@
   text-shadow: 3px 3px 2px black;
   font-weight: 600;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-right: 20%;
+  padding: 2px;
+}
+
+.bussinessInfo {
+  padding: 0;
 }
 
 .phoneNum {
   margin-top: 15%;
 }
+
 .city {
   overflow-wrap: break-word;
   text-align: center;
@@ -226,7 +228,7 @@
 .brewbod {
   display: flex;
   margin: 5%;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .websiteBtn {
@@ -244,12 +246,6 @@
   margin-top: 40px;
 }
 
-.noMap {
-  max-width: 75%;
-  height: 80%;
-  box-shadow: 10px 10px 8px black;
-}
-
 /* this is the CSS for the Map */
 .marker-icon {
   width: 30px;
@@ -257,7 +253,7 @@
 }
 
 /* this the intial attempt to get app to work on other devices */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   body {
     background: lightblue;
     margin: 0 auto;
@@ -267,4 +263,4 @@
   .brewbod {
     flex-direction: column;
   }
-}
+} */
