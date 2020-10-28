@@ -36,7 +36,7 @@ export default function Brewery() {
             <li className="address">
               Address: {apiData.street || 'Not Listed'}
             </li>
-            <li>
+            <li className="city">
               {apiData.city || 'Not Listed'}, {apiData.state || 'Not Listed'}{' '}
               {apiData.postal_code || 'Not Listed'}
             </li>

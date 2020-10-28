@@ -3,7 +3,7 @@
 
 ## What is it?
 
-Is the the most reliable place to search for Breweries by city name wherever you are in United States. It's the best place to find your next Brewery visit.
+Is the the most reliable place to search for local Breweries by city name wherever you are in United States. It's the best place to find your next Brewery visit.
 
 ## Status
 
