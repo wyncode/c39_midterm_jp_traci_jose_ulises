@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 
 /* this is global */
 body {
@@ -79,16 +80,28 @@ body {
 /* End of Landing Page */
 
 /* This is the CSS for Main Page */
-.CoverPhoto {
-  background: url('https://i.imgur.com/LaqvZvC.jpg');
+.CoverPhoto{
+  background-image: url("https://i.imgur.com/LaqvZvC.jpg");
   background-size: cover;
+  background-repeat:norepeat;
   height: 100vh;
-  background-repeat: no-repeat;
-  font-size: 40px;
-  margin-top: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.BreweryFinder{
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  background-color:#3357b7;
+  background-size: cover;
+  height: 30vh;
+  width:100%;
+  font-family: "Syne Mono", monospace;
+  font-weight:700;
+}
+.searchComponent{
+  display:flex;
 }
 .bottleSpin{
   animation:rotation 2s infinite linear;
@@ -101,42 +114,50 @@ body {
     transform: rotate(360deg);
   }
 }
-
+/* search form component */
+#searchForm{
+  height:5vh;
+  width: 20vw;
+  border-radius: 5%;
+  background: transparent;
+  }
 
 /* This is the CSS for the Brewery Card  */
 .card{
+  display:flex;
+  flex-direction: column;
   background:transparent;
-  display: flex;
-  justify-content: center;
-  height:300px;
-  width:90%;
   border:none;
-  padding-left:auto;
+  font-weight:600;
+  
 }
-.brewName {
-  display: flex;
-  justify-content: center;
-  padding: 25px;
-  font-weight: bold;
-  background-color:#3357b7;
-  color:whitesmoke;
-  font-size:60px;
-  margin:auto;
-}
-.cardText{
-  background-color:#f2af29;
-  color:#2E2E2E;
-  padding-left:10px;
-  font-size:40px; 
-  margin:auto;
+.card h2{
+  margin:40px auto;
+  font-size: 4rem;
+  max-width: 700px;
+  overflow-wrap: break-word;
   text-align: center;
+  color: whitesmoke;
+  font-family: "Syne Mono", monospace;
+  line-height: 80%;
+}
+.card h4{
+  margin:0px auto;
+  font-size:2rem;
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Syne Mono", monospace;
+}
+.moreInfo{
+  padding-top: 5px;
+  background:transparent;
+  color: whitesmoke;
+  border:2px solid whitesmoke;
+  width: 10vw;
+  height:5vw;
+  margin:auto;
+}
 
-}
-.breweryPhoto{
-  height:190px;
-  background: transparent;
-  border-radius:5%;
-}
 
 
 /* this switches the backgrounds of the cards */
@@ -144,20 +165,22 @@ body {
   background-image:url(./Photos/blue.png);
   background-size:cover;
   background-repeat: no-repeat;
-}
-.beerBubbles{
-  background-image:url(./Photos/beerBubbles.png);
-  background-size:cover;
-  background-repeat: no-repeat;
+  height: 300px;
 }
 .yellow{
   background-image:url(./Photos/yellow.png);
   background-size:cover;
   background-repeat: no-repeat;
+  height:300px;
+}
+.orange{
+  background-image:url(./Photos/orange.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 300px;
 }
 
-
-
+/* For Brewery Page */
 
 .breweryBody {
   min-height: 100vh;
