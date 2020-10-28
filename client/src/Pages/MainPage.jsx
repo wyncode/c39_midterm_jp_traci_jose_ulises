@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import SearchForm from "../components/SearchForm";
 import axios from "axios";
 import BreweryCard from "../components/BreweryCard";
-import {Row} from "react-bootstrap";
 
 
 const MainPage = () => {
