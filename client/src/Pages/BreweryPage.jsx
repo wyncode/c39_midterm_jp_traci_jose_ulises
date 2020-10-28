@@ -57,12 +57,3 @@ export default function Brewery() {
 }
 
 
-// {apiData.website_url &&   <a href={apiData.website_url} target="_blank">
-//               <button className="brewerybtn">Check Out My Website!</button>
-//             </a> }
-
-{/* <a href={apiData.website_url} target="_blank">
-                <button className="brewerybtn">Visit their website!</button>
-              </a> */}
-
-{/* <li className="brewbutton">Website: {apiData.website_url || 'Not Listed'}</li> */}
