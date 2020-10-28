@@ -14,8 +14,9 @@ const LandingPage = () => {
             I'm 21 or Older
           </button>
         </Link>
+        <div class="divider" />
         <button
-          id="btn2"
+          id="btn"
           className="btn"
           onClick={() => {
             alert('Sorry! You must be 21 to enter!');
