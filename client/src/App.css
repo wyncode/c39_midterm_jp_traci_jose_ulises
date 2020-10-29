@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 /*this is the landing page*/
 .cover {
@@ -72,31 +72,33 @@
 /* End of Landing Page */
 
 /* This is the CSS for Main Page */
-.CoverPhoto{
-  background-image: url("https://i.imgur.com/LaqvZvC.jpg");
+.CoverPhoto {
+  background-image: url('https://i.imgur.com/LaqvZvC.jpg');
   background-size: cover;
-  background-repeat:norepeat;
+  background-repeat: norepeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
-.BreweryFinder{
+
+.BreweryFinder {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
-  background-color:#3357b7;
+  margin-top: 33vh;
+  background-color: #3357b7;
   background-size: cover;
   height: 25vh;
-  width:100%;
-  font-family: "Syne Mono", monospace;
-  font-weight:700;
+  width: 100%;
+  font-family: 'Syne Mono', monospace;
+  font-weight: 700;
 }
-.searchComponent{
-  display:flex;
+.searchComponent {
+  display: flex;
 }
-.bottleSpin{
-  animation:rotation 2s infinite linear;
+.bottleSpin {
+  animation: rotation 2s infinite linear;
 }
 @keyframes rotation {
   from {
@@ -107,69 +109,67 @@
   }
 }
 /* search form component */
-#searchForm{
-  height:5vh;
+#searchForm {
+  height: 5vh;
   width: 20vw;
   border-radius: 5%;
   background: transparent;
-  }
+}
 
 /* This is the CSS for the Brewery Card  */
-.card{
-  display:flex;
+.card {
+  display: flex;
   flex-direction: column;
-  background:transparent;
-  border:none;
-  font-weight:600;
-  
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  height: 38vh;
 }
-.card h2{
-  margin:40px auto;
+.card h2 {
+  margin: 40px auto;
   font-size: 4rem;
   max-width: 700px;
   overflow-wrap: break-word;
   text-align: center;
   color: whitesmoke;
-  font-family: "Syne Mono", monospace;
+  font-family: 'Syne Mono', monospace;
   line-height: 80%;
 }
-.card h4{
-  margin:0px auto;
-  font-size:2rem;
+.card h4 {
+  margin: 0px auto;
+  font-size: 2rem;
   text-align: center;
   color: whitesmoke;
-  font-family: "Syne Mono", monospace;
+  font-family: 'Syne Mono', monospace;
 }
-.moreInfo{
+.moreInfo {
   padding-top: 5px;
-  background:transparent;
+  background: transparent;
   color: whitesmoke;
-  border:2px solid whitesmoke;
-  width: 10vw;
-  height:5vw;
-  margin:auto;
+  border: 2px solid whitesmoke;
+  width: 8vw;
+  height: 5vw;
+  margin: auto;
 }
-
-
 
 /* this switches the backgrounds of the cards */
 .blue {
   background-image: url(./Photos/blue.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 38vh;
 }
-.yellow{
-  background-image:url(./Photos/yellow.png);
-  background-size:cover;
+.yellow {
+  background-image: url(./Photos/yellow.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  height:300px;
+  height: 38vh;
 }
-.orange{
-  background-image:url(./Photos/orange.png);
-  background-size:cover;
+.orange {
+  background-image: url(./Photos/orange.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 38vh;
 }
 
 /* For Brewery Page */
@@ -179,12 +179,10 @@
   background-image: url(./Photos/Bar.png);
   background-size: cover;
   background-repeat: repeat;
-
 }
 
 .brewerytitle {
   color: #f2af29;
-  margin-left: 50px;
 }
 
 .brewerytitle h1 {
@@ -199,7 +197,6 @@
 }
 
 .brewerypic {
-  margin-left: 8%;
   max-width: 75%;
   height: 80%;
   border: orange 1px solid;
@@ -210,26 +207,23 @@
   display: flex;
   justify-content: center;
   list-style-type: none;
-  padding: 1rem;
-  padding-right: 35%;
-  padding-left: 5%;
   font-size: 165%;
   color: goldenrod;
   text-shadow: 3px 3px 2px black;
   font-weight: 600;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 0px 10px 0px 10px;
+  padding: 2px;
 }
 
-.brewerylist .phoneNum {
-  padding: 15% 0 0 0;
+.bussinessInfo {
+  padding: 0;
 }
 
-.brewerylist .brewbutton {
-  padding: 5% 0 0 0;
+.phoneNum {
+  margin-top: 15%;
 }
 
-.city{
+.city {
   overflow-wrap: break-word;
   text-align: center;
 }
@@ -237,11 +231,9 @@
 .brewbod {
   display: flex;
   margin: 5%;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-.bussinessInfo {
-  padding: 0;
-}
+
 .websiteBtn {
   box-shadow: 10px 10px 8px black;
   background-color: rgba(42, 24, 23, 0.8);
@@ -250,17 +242,11 @@
 
 .backbtn {
   background-color: transparent;
-  color:whitesmoke;
+  color: whitesmoke;
   border: transparent;
 }
-.arrow{
+.arrow {
   margin-top: 40px;
-}
-
-.noMap {
-  max-width: 75%;
-  height: 80%;
-  box-shadow: 10px 10px 8px black;
 }
 
 /* this is the CSS for the Map */
@@ -269,11 +255,8 @@
   height: 30px;
 }
 
-
-
-
 /* this the intial attempt to get app to work on other devices */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   body {
     background: lightblue;
     margin: 0 auto;
@@ -283,4 +266,4 @@
   .brewbod {
     flex-direction: column;
   }
-}
+} */
