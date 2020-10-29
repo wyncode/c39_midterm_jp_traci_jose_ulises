@@ -255,15 +255,4 @@
   height: 30px;
 }
 
-/* this the intial attempt to get app to work on other devices */
-/* @media only screen and (max-width: 600px) {
-  body {
-    background: lightblue;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .brewbod {
-    flex-direction: column;
-  }
-} */
+
