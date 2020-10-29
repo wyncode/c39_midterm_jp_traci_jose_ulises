@@ -79,12 +79,14 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
+
 .BreweryFinder {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 33vh;
   background-color: #3357b7;
   background-size: cover;
   height: 25vh;
@@ -121,6 +123,7 @@
   background: transparent;
   border: none;
   font-weight: 600;
+  height: 38vh;
 }
 .card h2 {
   margin: 40px auto;
@@ -144,7 +147,7 @@
   background: transparent;
   color: whitesmoke;
   border: 2px solid whitesmoke;
-  width: 10vw;
+  width: 8vw;
   height: 5vw;
   margin: auto;
 }
@@ -154,19 +157,19 @@
   background-image: url(./Photos/blue.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 38vh;
 }
 .yellow {
   background-image: url(./Photos/yellow.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 38vh;
 }
 .orange {
   background-image: url(./Photos/orange.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 38vh;
 }
 
 /* For Brewery Page */
