@@ -33,10 +33,10 @@ const MainPage = () => {
   return (
   <>
     <div className="CoverPhoto">
-      <h1 style={{fontFamily:"monospace", fontSize:'12rem', color:'whitesmoke',paddingLeft:'10px',marginBottom:'1px',fontWeight:'700'}}>Git </h1>
-      <h1 style={{fontFamily:"monospace", fontSize:'12rem', color:'whitesmoke',paddingLeft:'10px',marginBottom:'1px',fontWeight:'700'}}>Brew'd</h1>
+      <h1 style={{fontFamily:"monospace", fontSize:'10vw', color:'whitesmoke',paddingLeft:'10px',marginBottom:'1px',fontWeight:'700'}}>Git </h1>
+      <h1 style={{fontFamily:"monospace", fontSize:'10vw', color:'whitesmoke',paddingLeft:'10px',marginBottom:'1px',fontWeight:'700'}}>Brew'd</h1>
       <div className="BreweryFinder">
-      <h3 style={{fontSize:'5rem', color:'whitesmoke'}}>Brewery Finder</h3>
+      <h3 style={{fontSize:'5vw', color:'whitesmoke'}}>Brewery Finder</h3>
       <SearchForm handleSubmitProp={handleSubmit} loading={loading}/>
       </div>
    </div>

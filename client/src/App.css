@@ -127,7 +127,7 @@
 }
 .card h2 {
   margin: 40px auto;
-  font-size: 4rem;
+  font-size: 5vw;
   max-width: 700px;
   overflow-wrap: break-word;
   text-align: center;
@@ -137,7 +137,7 @@
 }
 .card h4 {
   margin: 0px auto;
-  font-size: 2rem;
+  font-size: 2vw;
   text-align: center;
   color: whitesmoke;
   font-family: 'Syne Mono', monospace;
@@ -198,7 +198,8 @@
 
 .brewerypic {
   max-width: 75%;
-  height: 80%;
+  height: 32vh;
+  width:45 vh;
   border: orange 1px solid;
   box-shadow: 10px 10px 8px black;
 }
@@ -256,14 +257,58 @@
 }
 
 /* this the intial attempt to get app to work on other devices */
-/* @media only screen and (max-width: 600px) {
-  body {
-    background: lightblue;
-    margin: 0 auto;
+@media only screen and (max-width: 600px) {
+  .brewbod {
     display: flex;
     flex-direction: column;
   }
-  .brewbod {
+  .CoverPhoto{
+    background-image: url('https://i.imgur.com/LaqvZvC.jpg');
+    background-size: cover;
+    background-repeat: norepeat;
+    width: 100%; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+  }
+  .BreweryFinder{
+    display:flex;
+    flex-direction: column;
+    height: 30vh;
+  }
+  .card{
+    display:flex;
+    justify-content: center;
+    overflow-wrap: break-word;
+  }
+  .moreInfo{
+    width: 50%;
+    height:20%;
+  }
+  #searchForm{
+    width:50vw;
+
+  }
+  .cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #gitBrewd {
+    font-size: 55px;
+    padding-bottom: 80px;
+  }
+  .button12 {
+    display: flex;
+    align-items: center;
     flex-direction: column;
   }
-} */
+  .welcome {
+    font-size: 60px;
+  }
+}
