@@ -5,13 +5,16 @@ if (process.env.NODE_ENV !== 'production') {
 const express = require('express');
 const path = require('path');
 const app = express()
+const axios = require('axios');
 
 
 
-app.get('/api/demo', (request, response) => {
-  response.json({
-    message: 'Hello from server.js'
-  })
+app.get('/api/breweries/:locality', async (req, res) => {
+  const locality = req.params.locality
+  const { data } = await axios.get(
+    `https://sandbox-api.brewerydb.com/v2/${locality}?key=${process.env.API_KEY}`
+  )
+    return response.json(data)
 })
 
 

@@ -25,4 +25,5 @@
     "heroku-postbuild": "cd client && yarn && yarn run build",
     "prettify": "prettier '*/**/*.js' '*/**/*.jsx' '*/**/*.html' '*/**/*.css' --write"
   }
+  
 }
