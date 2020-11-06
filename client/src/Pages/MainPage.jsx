@@ -16,11 +16,11 @@ const MainPage = () => {
     setLoading(true)
    
     try {
-      const {data} = await  axios.get(`https://api.openbrewerydb.org/breweries?by_city=${event.target.elements.searchForm.value}`)
-      setTimeout(() => {
-        setApiData(data)
+      const {data} = await  axios.get(`/api/breweries/${event.target.elements.searchForm.value}`)
+      console.log (data)  
+      setApiData(data)
         setLoading(false)
-      }, 3000);
+     
       form.reset()
    
     } catch (error) {
